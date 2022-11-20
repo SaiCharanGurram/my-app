@@ -5,7 +5,7 @@ import Template from "./Template";
 function App() {
   async function apicall() {
     const url =
-      "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=minutely,hourly&appid=53d9ea2be0a6a2217e074c01b79cd111";
+      "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=minutely,hourly&appid=";
     const res = await fetch(url);
     const data = await res.json();
     const result = data.daily.map((i) => ({
